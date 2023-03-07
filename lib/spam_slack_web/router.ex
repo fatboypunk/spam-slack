@@ -17,7 +17,7 @@ defmodule SpamSlackWeb.Router do
   scope "/", SpamSlackWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", ReportsLive
   end
 
   scope "/api", SpamSlackWeb.Api do

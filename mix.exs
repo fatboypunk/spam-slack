@@ -47,7 +47,7 @@ defmodule SpamSlack.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:httpoison, "~> 2.0"},
-      {:dotenv, "~> 3.0"}
+      {:elixir_uuid, "~> 1.2" }
     ]
   end
 
