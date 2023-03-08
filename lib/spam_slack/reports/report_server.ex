@@ -11,20 +11,20 @@ defmodule SpamSlack.Reports.ReportServer do
   end
 
   def add_report(report) do
-    GenServer.call(__MODULE__, {:add_report, report})
+    GenServer.cast(__MODULE__, {:add_report, report})
   end
 
   def all do
     GenServer.call(__MODULE__, :get_reports)
   end
 
-  def handle_call({:add_report, report}, _from, reports) do
+  def handle_cast({:add_report, report}, reports) do
     reports =
       report
       |> Reports.send_report()
       |> add_report_to_state(reports)
 
-    {:reply, :ok, reports}
+    {:noreply, reports}
   end
 
   def handle_call(:get_reports, _from, reports) do

@@ -2,14 +2,16 @@
   <div class="reports">
     <h2>Other Reports</h2><span class="count">(<%= Enum.count(@other_reports) %>)</span>
     <%= for report <- @other_reports do %>
+      <div id="other-reports" phx-update="replace" >
       <.live_component module={ReportComponent} id={report.id}  report={report} />
+      </div>
     <% end %>
   </div>
 
   <div class="reports" >
     <h2>Spam Reports</h2><span class="count">(<%= Enum.count(@spam_reports) %>)</span>
     <%= for report <- @spam_reports do %>
-      <div id="spam-reports" phx-update="prepend" >
+      <div id="spam-reports" phx-update="replace" >
         <.live_component module={ReportComponent} id={report.id}  report={report} />
       </div>
     <% end %>

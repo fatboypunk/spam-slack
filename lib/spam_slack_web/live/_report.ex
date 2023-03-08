@@ -5,9 +5,10 @@ defmodule ReportComponent do
     ~H"""
     <div id="report-\#{@id}" class="report">
       <div class={["send-status", status(@report)]}>
-        <div class="time">
+        <time datetime={@report.bounced_at} class="time">
           <%= @report.bounced_at %>
-        </div>
+        </time>
+
         <div>
           <%= @report.email %>
         </div>
