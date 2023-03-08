@@ -48,7 +48,6 @@ if config_env() == :prod do
     ],
     secret_key_base: secret_key_base
 
-
   # ## SSL Support
   #
   # To get SSL working, you will need to add the `https` key
@@ -98,4 +97,6 @@ if config_env() == :prod do
   #     config :swoosh, :api_client, Swoosh.ApiClient.Hackney
   #
   # See https://hexdocs.pm/swoosh/Swoosh.html#module-installation for details.
+  config :spam_slack,
+    slack_api_token: System.get_env("SLACK_API_TOKEN")
 end

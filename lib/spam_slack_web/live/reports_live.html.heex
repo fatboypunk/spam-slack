@@ -6,10 +6,12 @@
     <% end %>
   </div>
 
-  <div class="reports" id="spam-reports" phx-update="prepend" >
+  <div class="reports" >
     <h2>Spam Reports</h2><span class="count">(<%= Enum.count(@spam_reports) %>)</span>
     <%= for report <- @spam_reports do %>
-      <.live_component module={ReportComponent} id={report.id}  report={report} />
+      <div id="spam-reports" phx-update="prepend" >
+        <.live_component module={ReportComponent} id={report.id}  report={report} />
+      </div>
     <% end %>
   </div>
 </div>

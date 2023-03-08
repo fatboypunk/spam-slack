@@ -48,6 +48,4 @@ defmodule SpamSlack.Reports do
   end
 
   def send_report(report), do: report
-
-  def handle_report(_), do: :noop
 end
