@@ -23,7 +23,7 @@ To deploy to Fly.io you need to have a Fly account and have the Fly CLI installe
   token
 - run `flyctl deploy` to deploy the app again after setting the secret
 
-## Things i'd like to improve with more time
+## Things I'd like to improve with more time
 
 ### Add more tests
 
