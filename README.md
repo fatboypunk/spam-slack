@@ -30,7 +30,7 @@ To deploy to Fly.io you need to have a Fly account and have the Fly CLI installe
 I've added two tests to ensure the flow of sending the message to slack
 correctly works but more would be nice.
 
-I haven't mocked any tests, so it's sending actuall cals to slack now.
+I haven't mocked any tests, so it's sending actual calls to slack now.
 
 ### Broadcast the reports to all users
 
