@@ -27,15 +27,15 @@ To deploy to Fly.io you need to have a Fly account and have the Fly CLI installe
 
 ### Add more tests
 
-I've added two tests to ensure the flow of sending the message to slack
+I've added two tests to ensure the flow of sending the message to Slack
 correctly works but more would be nice.
 
-I haven't mocked any tests, so it's sending actual calls to slack now.
+I haven't mocked any tests, so it's sending actual calls to Slack now.
 
 ### Broadcast the reports to all users
 
-Currently the liveview uses polling internally to fetch the reports of a
-GenServer. When adding broadcasting new values to the liveview, streams could
+Currently the LiveView uses polling internally to fetch the reports of a
+GenServer. When adding broadcasting new values to the LiveView, streams could
 be implemented and have a better realtime experience.
 
 ### Split up some code
