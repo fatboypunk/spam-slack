@@ -19,7 +19,7 @@ API calls can be done to `localhost:4000/api/reports`.
 To deploy to Fly.io you need to have a Fly account and have the Fly CLI installed.
 
 - Run `fly launch --now` to create a new Fly app and deploy the app
-- Run `flyctl secrets set SLACK_API_TOKEN=<token of slack>` to se the Slack API
+- Run `flyctl secrets set SLACK_API_TOKEN=<token of slack>` to set the Slack API
   token
 - run `flyctl deploy` to deploy the app again after setting the secret
 
