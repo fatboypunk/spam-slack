@@ -1,3 +1,10 @@
+# Spam Slack
+
+This is made within an assignment to create a project in any languange that receives JSON on an endpoint.
+When the received message contains a type `SpamNotification` the JSON should be posted to a slack channel.
+The time spend on the project should be no more than 2 hours. 
+And note down whatever could be improved. (In this README)
+
 ## Setup locally
 
 To start locally Phoenix server:
